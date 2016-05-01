@@ -13,6 +13,9 @@
 		AC4CA82D1CD60C0400A53FBB /* reciepez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4CA82B1CD60C0400A53FBB /* reciepez.xcdatamodeld */; };
 		AC4CA82F1CD60C0400A53FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4CA82E1CD60C0400A53FBB /* Assets.xcassets */; };
 		AC4CA8321CD60C0400A53FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4CA8301CD60C0400A53FBB /* LaunchScreen.storyboard */; };
+		AC4CA83E1CD61AB900A53FBB /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CA83C1CD61AB900A53FBB /* Recipe+CoreDataProperties.swift */; };
+		AC4CA83F1CD61AB900A53FBB /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CA83D1CD61AB900A53FBB /* Recipe.swift */; };
+		AC4CA8411CD61D0300A53FBB /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4CA8401CD61D0300A53FBB /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AC4CA82E1CD60C0400A53FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4CA8311CD60C0400A53FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC4CA8331CD60C0400A53FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4CA83C1CD61AB900A53FBB /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC4CA83D1CD61AB900A53FBB /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		AC4CA8401CD61D0300A53FBB /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		AC4CA8231CD60C0400A53FBB /* reciepez */ = {
 			isa = PBXGroup;
 			children = (
+				AC4CA83B1CD61A6E00A53FBB /* Controller */,
+				AC4CA83A1CD61A6900A53FBB /* View */,
+				AC4CA8391CD61A6200A53FBB /* Model */,
 				AC4CA8241CD60C0400A53FBB /* AppDelegate.swift */,
-				AC4CA8261CD60C0400A53FBB /* ViewController.swift */,
-				AC4CA8281CD60C0400A53FBB /* Main.storyboard */,
 				AC4CA82E1CD60C0400A53FBB /* Assets.xcassets */,
 				AC4CA8301CD60C0400A53FBB /* LaunchScreen.storyboard */,
 				AC4CA8331CD60C0400A53FBB /* Info.plist */,
 				AC4CA82B1CD60C0400A53FBB /* reciepez.xcdatamodeld */,
 			);
 			path = reciepez;
+			sourceTree = "<group>";
+		};
+		AC4CA8391CD61A6200A53FBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC4CA83C1CD61AB900A53FBB /* Recipe+CoreDataProperties.swift */,
+				AC4CA83D1CD61AB900A53FBB /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC4CA83A1CD61A6900A53FBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC4CA8281CD60C0400A53FBB /* Main.storyboard */,
+				AC4CA8401CD61D0300A53FBB /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC4CA83B1CD61A6E00A53FBB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC4CA8261CD60C0400A53FBB /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4CA82D1CD60C0400A53FBB /* reciepez.xcdatamodeld in Sources */,
+				AC4CA83E1CD61AB900A53FBB /* Recipe+CoreDataProperties.swift in Sources */,
 				AC4CA8271CD60C0400A53FBB /* ViewController.swift in Sources */,
+				AC4CA8411CD61D0300A53FBB /* RecipeCell.swift in Sources */,
 				AC4CA8251CD60C0400A53FBB /* AppDelegate.swift in Sources */,
+				AC4CA83F1CD61AB900A53FBB /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

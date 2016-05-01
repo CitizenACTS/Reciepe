@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="IWI-TV-4f3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="164" id="IWI-TV-4f3" customClass="RecipeCell" customModule="reciepez" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IWI-TV-4f3" id="56R-QG-Uzq">
@@ -55,6 +55,10 @@
                                                 <constraint firstItem="cBi-3h-Rm4" firstAttribute="centerX" secondItem="56R-QG-Uzq" secondAttribute="centerX" id="w4k-6x-vtr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="recipeImage" destination="ey0-Rm-aME" id="Grd-EC-lbV"/>
+                                            <outlet property="recipeTitle" destination="cBi-3h-Rm4" id="bq6-Ht-tJZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -75,6 +79,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="LVr-ST-Ocj" id="PaS-gB-i2r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
